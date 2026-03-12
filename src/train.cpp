@@ -100,7 +100,7 @@ void train_dcgan(
                 samples = samples.to(torch::kCPU).contiguous();
 
                 cv::Mat img(28, 28, CV_8UC1, samples.data_ptr());
-                std::string outPath = checkpointDir + "inference-sample" + std::to_string(epoch) + ".png";
+                std::string outPath = checkpointDir + "train-sample" + std::to_string(epoch) + ".png";
                 cv::imwrite(outPath, img);             
             }
         }
