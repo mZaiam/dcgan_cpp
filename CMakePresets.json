@@ -1,0 +1,17 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "GCC 15.2.0 x86_64-conda-linux-gnu",
+            "displayName": "GCC 15.2.0 x86_64-conda-linux-gnu",
+            "description": "Using compilers: C = /home/mzaiam/miniforge3/envs/cpp/bin/x86_64-conda-linux-gnu-gcc, CXX = /home/mzaiam/miniforge3/envs/cpp/bin/x86_64-conda-linux-gnu-g++",
+            "binaryDir": "${sourceDir}/bin",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/home/mzaiam/miniforge3/envs/cpp/bin/x86_64-conda-linux-gnu-gcc",
+                "CMAKE_CXX_COMPILER": "/home/mzaiam/miniforge3/envs/cpp/bin/x86_64-conda-linux-gnu-g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}
